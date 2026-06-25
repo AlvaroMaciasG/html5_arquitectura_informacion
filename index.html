@@ -1,9 +1,125 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Página de introducción al ajedrez" />
+    <title>Club de Ajedrez Básico</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <img
+        src="logo-caballo.png"
+        alt="Logotipo de una pieza de caballo de ajedrez"
+        width="100"
+      />
+      <h1>Bienvenido al Mundo del Ajedrez</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#piezas">Las Piezas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="historia">
+        <h2>¿Qué es el ajedrez?</h2>
+        <p>
+          El ajedrez es un juego de tablero de estrategia en el que se enfrentan
+          dos jugadores. Cada uno tiene 16 piezas que se colocan sobre un
+          tablero cuadriculado de 64 casillas y el objetivo es derrotar al rey
+          del oponente.
+        </p>
+
+        <blockquote>
+          <p>"El ajedrez es gimnasia para la mente."</p>
+        </blockquote>
+      </section>
+
+      <section id="piezas">
+        <h2>Conoce las mejores piezas</h2>
+
+        <article>
+          <h3>El Rey y la Reina</h3>
+          <p>
+            El <strong>Rey</strong> es la pieza más importante. Si el rey está
+            bajo ataque y no puede escapar, se produce el <em>Jaque Mate</em> y
+            la partida termina de inmediato.
+          </p>
+          <p>
+            La <strong>Reina</strong> es la pieza más versátil porque puede
+            moverse en línea recta en cualquier dirección.
+          </p>
+        </article>
+
+        <figure>
+          <img
+            src="tablero.jpg"
+            alt="Tablero de ajedrez visto desde arriba con todas las piezas en posición inicial"
+          />
+          <figcaption>Posición inicial de las piezas en el tablero.</figcaption>
+        </figure>
+      </section>
+
+      <aside>
+        <h3>Dato curioso</h3>
+        <p>
+          Se calcula que el número de partidas de ajedrez posibles (numero de
+          Shannon) es mucho mayor que el número de átomos en el universo
+          observable.
+        </p>
+      </aside>
+
+      <section id="contacto">
+        <h2>Únete a nuestro club</h2>
+        <p>
+          Rellena este formulario para recibir más información y juega con
+          nosotros.
+        </p>
+
+        <form action="#" method="get">
+          <label for="nombre">Tu nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <br /><br />
+
+          <label for="email">Tu correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+          <br /><br />
+
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" required />
+          <br /><br />
+
+          <label for="mensaje">Tu mensaje:</label>
+          <br />
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            cols="40"
+            required
+          ></textarea>
+          <br /><br />
+
+          <button type="submit">Enviar datos</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>Contacto: info@clubdeajedrez.com | Teléfono: 912345678</p>
+      <p>&copy; 2026 Club de ajedrez. Todos los derechos reservados.</p>
+      <p>Síguenos en nuestras redes:</p>
+      <ul>
+        <li><a href="https://twitter.com">Twitter</a></li>
+        <li><a href="https://instagram.com">Instagram</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
